@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'jujutsu'; /* Nom que vous allez utiliser dans votre CSS */
+    src: url('jujutsu-kaisen/Jujutsu\ Kaisen.ttf') format('woff2');
+    font-weight: normal; /* Optionnel : vous pouvez spécifier le poids de la police si nécessaire */
+    font-style: normal; /* Optionnel : vous pouvez spécifier le style de la police (normal, italic, etc.) */
+}
+
+
+:root {
+    --dark-blue: #1A1F36;
+    --dark-red: #8B0000;
+    --dark-gray: #2E2E2E;
+    --light-blue: #00BFFF;
+    --off-white: #F5F5F5;
+    --gold: #FFD700;
+    --dark-green: #006400;
+    --dark-purple: #4B0082;
+    --light-gray: #D3D3D3;
+    
+}
+
+table,
+th,
+td {
+    border: var(--dark-blue) solid 2px;
+    border-collapse: collapse;
+}
+
+td,
+th,
+tr {
+    height: 75px;
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 1rem;
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+}
+
+body {
+    font-family: 'jujutsu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Jujutsu-Kaisen-poster-4K-Vertical-Wallpaper.jpg') center no-repeat;
+    background-size: cover;
+    color: var(--off-white);
+}
+
+table {
+    width: 70%;
+}
+
+.logo {
+    width: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+tr > td:first-child {
+    width: 250px;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+}
+
+th {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    text-transform: capitalize;
+}
+
+caption {
+    margin-bottom: 5px;
+    color: var(--gold);
+    font-size:xx-large;
+}
+
+.students,
+.week {
+    gap: 50px;
+}
+
+.week th,
+.students th {
+    background-color: var(--dark-red);
+}
+
+.week td,
+.students td {
+    border: 1px solid var(--dark-gray);
+}
+
+.exorcism,
+.strategy,
+.martial {
+    background-color: var(--dark-red);
+    color: var(--gold);
+}
+
+
+body {
+    position: relative; /* Assure que les éléments enfants sont positionnés relativement au body */
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 290px;
+    padding: 10px; /* Optionnel : pour ajouter un peu d'espace autour du logo */
+}
+
+.logo img {
+    width: 200px; /* Ajustez la taille du logo selon vos besoins */
+    height: auto; /* Garder les proportions de l'image */
+}
+
+
+.students tbody tr:nth-child(even) td:not(:first-child) {
+    background-color: var(--dark-red);
+    color: var(--gold);
+}
